@@ -33,8 +33,8 @@ const Button = styled.button`
 const Counter = styled.div`
   background: #fff;
   border-radius: 3px;
-  border: 2px solid purple;
-  color: purple;
+  border: 2px solid #fd9696;
+  color: #fd9696;
   margin: 0 .2rem;
   padding: 0.25rem 1rem;
   width: 9.4rem;
