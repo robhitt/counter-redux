@@ -20,13 +20,19 @@ const Button = styled.button`
   border-radius: 5px;
   border: 2px solid palevioletred;
   color: palevioletred;
+  cursor: pointer;
   margin: .2rem .2rem .5rem;
   padding: 0.25rem 1rem;
+
+  :hover {
+    background-color: #fff2f6;
+    color: #ca245a;
+  }
 `;
 
 const Counter = styled.div`
-  background: transparent;
-  border-radius: 5px;
+  background: #fff;
+  border-radius: 3px;
   border: 2px solid purple;
   color: purple;
   margin: 0 .2rem;
@@ -34,10 +40,7 @@ const Counter = styled.div`
   width: 9.4rem;
 `;
 
-const mapStateToProps = state => {
-  console.log(state);
-  return { counter: state.counter }
-}
+const mapStateToProps = state => ({ counter: state.counter });
 
 export default connect(
   mapStateToProps,
